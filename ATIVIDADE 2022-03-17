@@ -1,24 +1,94 @@
 programa
 {
-	
-	funcao inicio() {
-	real Mnumero1, Mnumero2, Msoma, Msubtracao, Mmultiplicacao, Mdivisao
-	Mnumero1 = 0.0
-	Mnumero2 = 0.0
-	Msoma = 0.0
-	Msubtracao = 0.0
-	Mmultiplicacao = 0.0
-	Mdivisao = 0.0
-	escreva ("Insira o primeiro numero:")
-	leia (Mnumero1)
-	escreva ("Insira o segundo numero:")
-	leia (Mnumero2)
-	Msoma= Mnumero1 +Mnumero2
-	Msubtracao= Mnumero1 - Mnumero2
-	Mmultiplicacao = Mnumero1 + Mnumero2
-	escreva("\nA soma dos numeros é: ", Msoma)
-	escreva("\nA subtracao dos numeros é: ", Msubtracao)
-	escreva("\nA multiplicacao dos numeros é: ", Mmultiplicacao)
-	escreva("\nA divisão dos numeros é: ", Mdivisao)
-	}
-}
+	funcao inicio() 
+	{
+	    
+	    real Minformatica[3][5], Mseguranca[3][5], Mempreendedorismo[3][5], Mdados[3][5], Mweb[3][5]
+	    cadeia Mnome[3][5]
+	    inteiro Mindice,Mturma
+	    
+    Mindice=0
+    Mturma=0
+
+    para (Mturma=0; Mturma<=2; Mturma++)
+    {
+        para (Mindice=0; Mindice<=3;Mindice++)
+        
+        {
+            escreva ("Digite um nome:")
+            leia (Mnome[Mturma][Mindice])
+            escreva ("Digite uma nota de informatica:")
+            leia (Minformatica[Mturma][Mindice])
+            escreva ("Digite a nota de segurança:")
+            leia (Mseguranca[Mturma][Mindice])
+            escreva ("Digite uma nota de empreendedorismo:")
+            leia (empreendedorismo[Mturma][Mindice])
+            escreva ("Digite uma nota de dados:")
+            leia (Mdados[Mturma][Mindice])
+            escreva ("Digite uma nota de web:")
+            leia (Mweb[Mturma][Mindice])
+        }
+    }
+    para (Mturma = 0; Mturma <=2; Mturma++)
+		{
+			para (Mindice = 0; Mindice <= 3; Mindice ++)
+			{
+			    escreva ("Digite um nome:")
+			    leia (Mnome[Mturma][Mindice])
+			    escreva ("Digite a nota de informatica:")
+			    leia (Minformatica[Mturma][Mindice])
+			    escreva ("Digite uma nota de seguranca: ")
+			    leia (Mseguranca[Mturma][Mindice])
+			    escreva ("Digite a nota de empreendedorismo:")
+			    leia (Mempreendedorismo[Mturma][Mindice])
+			    escreva ("Digite uma nota de dados:")
+			    leia (Mdados[Mturma][Mindice])
+			    escreva ("Digite uma nota de web:")
+			    leia (Mweb[Mturma][Mindice])
+			}
+		}
+
+    para (Mturma = 0; Mturma <=2; Mturma ++)
+    {
+        escreva ("\n  -",Mturma, "\nDiciplina informatica: ")
+        escreva ("\n-",Mturma, "\nDiciplina informatica: ")
+        para (Mindice=0;Mindice <= 3; Mindice++)
+        {
+            escreva ("\n- " ,Mnome[Mturma][Mindice])
+            se (Minformatica[Mturma][Mindice]>=60)
+            escreva("APROVADO") 
+            senao 
+            escreva("APROVADO")
+            senao
+            escreva ("REPROVADO")
+        }
+        escreva ("\nDisciplina Seguranca:")
+        escreva ("\nDisciplina Seguranca:")
+        para (Mindice= 0; Mindice<= 4 ; Mindice++)
+        {
+        escreva ("\n- " ,Mnome[Mturma][Mindice])
+            escreva("\n- " ,Mnome[Mturma][Mindice])
+            se (Mseguranca[Mturma][Mindice]>=60)
+            escreva("Aprovado")
+            senao 
+            senao
+            escreva("Reprovado")
+        }
+        escreva("\nDiciplina Empreendedorismo:")
+            escreva("\n-" ,Mnome[Mturma][Mindice])
+            se (Mempreenderismo[Mturma][Mindice]>=60)
+            escreva("Aprovado")
+            senao 
+            senao
+            escreva("Reprovado")
+        }
+        escreva("\nDiciplina Dados:")
+
+            escreva("\n- " ,Mnome[Mturma][Mindice])
+            se (Mdados[Mturma][Mindice]>=60)
+            escreva("Aprovado")
+            senao 
+            senao
+            escreva("Reprovado")
+        }
+    }
